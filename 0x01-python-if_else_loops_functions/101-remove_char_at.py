@@ -2,16 +2,52 @@
 
 def remove_char_at(str, n):
     
-    new = ""
+    """Deletes the character at the n position of the str
+
+    This function creates a copy of the string, deletes
+
+    a position of the passed string and returns a string
+
+    without the deleted position
+
+
+
+    Parameters
+
+    ----------
+
+    str : str
+
+        The string from which the position needs to be removed
+
+    n : int
+
+        The position of the string to be deleted
+
+
+
+    Returns
+
+    -------
+
+    str
+
+        The copy of the string without the deleted position
+
+    """
     
-    i = 0
+
     
-    for c in str:
+    new_str = ""
+    
+
+    
+    for i in range(len(str)):
         
         if i != n:
             
-            new += c
+            new_str += str[i]
             
-        i += 1
-        
-    return new
+
+            
+    return new_str
